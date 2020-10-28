@@ -23,8 +23,8 @@ if (mod(tune.iter,tune.window) == 0)
     % Store the measured acceptance probability
     tune.W_burnin = tune.W_burnin + 1;
     tune.delta_window(tune.W_burnin) = log(tune.delta);
-    tune.m_window(tune.W_burnin) = tune.M+1/4;
-    tune.n_window(tune.W_burnin) = tune.D+1/2;
+    tune.m_window(tune.W_burnin) = tune.M+1;
+    tune.n_window(tune.W_burnin) = tune.D+2;
 
     %% If in phase 1, we are finding delta_max
     if (tune.W_phase == 1)

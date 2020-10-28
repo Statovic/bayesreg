@@ -150,7 +150,7 @@ function [beta, beta0, retval] = bayesreg(X, y, model, prior, varargin)
 [ny, py] = size(y);
 
 %% Version number
-VERSION = '1.90';
+VERSION = '1.91';
 
 %% Constants
 MAX_PRECOMPUTED_PX = 2e4;
